@@ -105,7 +105,10 @@ if (Array.from(params.entries()).length == 0) {
     );
   }
   console.log(window.location.pathname);
-  if (window.location.pathname == "/spotify-callback.html") {
+  if (
+    window.location.pathname == "/spotify-callback" ||
+    window.location.pathname == "/spotify-callback.html"
+  ) {
     $("#copy").css("visibility", "visible");
   }
 }
